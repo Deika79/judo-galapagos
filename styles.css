@@ -1,0 +1,66 @@
+/* MEDIA QUERY PARA MÓVILES */
+@media (max-width: 768px) {
+  
+  /* HEADER */
+  .header-top {
+    flex-direction: column; /* apila logo y menú */
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  
+  .header-nav {
+    margin: 10px 0 0 0; /* separa el menú del logo */
+  }
+  
+  .header-nav ul {
+    flex-direction: column; /* menú vertical */
+    width: 100%;
+  }
+  
+  .header-nav ul li {
+    margin: 10px 0; /* espacio entre enlaces */
+  }
+
+  .header-left .icono {
+    height: 40px; /* reduce tamaño del logo en móviles */
+  }
+
+  /* BANNER CON TEXTO Y BANDERA */
+  .banner-contenedor {
+    flex-direction: column; /* texto arriba, bandera debajo */
+    position: static; /* ya no absoluto */
+    transform: none;
+    margin: 20px 0;
+  }
+
+  .texto-sobre-imagen h1 {
+    font-size: 2rem; /* reduce tamaño del título */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .bandera-derecha {
+    width: 80px; /* reduce tamaño de la bandera */
+    margin: 0 auto;
+  }
+
+  /* BOTÓN LLÁMANOS */
+  .boton-telefono {
+    font-size: 1.5rem;
+    padding: 12px 25px;
+  }
+
+  /* SECCIÓN DE TEXTO Y FOTOS */
+  .seccion-texto h2 {
+    font-size: 2rem;
+  }
+
+  .seccion-texto p {
+    font-size: 1rem;
+  }
+
+  .contenedor-fotos img {
+    width: 100%; /* fotos ocupan toda la pantalla */
+    max-width: none;
+  }
+}
