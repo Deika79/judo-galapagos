@@ -1,3 +1,180 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-left .icono {
+  height: 50px;
+}
+.header-nav {
+  margin-right: 60px; /* aleja el menú del borde derecho */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-nav ul li {
+  margin-left: 20px;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Banner con imagen y bandera a la derecha */
+.imagen-con-texto .imagen-fondo {
+  position: relative;
+  width: 100%;
+}
+
+.banner-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra el texto verticalmente */
+  position: absolute;
+  top: 50%;
+  right: 50px; /* separación desde el borde derecho */
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.texto-sobre-imagen {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  margin-right: 20px; /* espacio entre texto y bandera */
+}
+
+.texto-sobre-imagen h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bandera-derecha {
+  width: 120px; /* tamaño de la bandera */
+  height: auto;
+}
+
+.imagen-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.seccion-llamanos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #541818; /* rojo estilo llamativo */
+}
+
+.boton-telefono {
+  display: inline-block;
+  background-color: #fff;
+  color: #ff4d4d;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-telefono:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+
+/* Sección de texto y fotos */
+.seccion-texto {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.seccion-texto p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.contenedor-fotos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-fotos img {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.contenedor-fotos img:hover {
+  transform: scale(1.05);
+}
+/* Sección de horario */
+.seccion-horario {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.seccion-horario h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.imagen-horario {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
 /* MEDIA QUERY PARA MÓVILES */
 @media (max-width: 768px) {
   
