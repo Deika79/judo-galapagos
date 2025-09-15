@@ -216,6 +216,40 @@ header {
 .formulario-contacto button:hover {
   background-color: #7a1f1f;
 }
+.seccion-galeria {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion-galeria h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
 
 /* MEDIA QUERY PARA MÓVILES */
 @media (max-width: 768px) {
