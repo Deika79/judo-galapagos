@@ -18,6 +18,8 @@
       <div class="header-left">
         <img src="img/logo ayto-14@2x.png" alt="Icono" class="icono">
       </div>
+      <!-- Botón hamburguesa -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
       <nav class="header-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -91,5 +93,14 @@
    <footer>
     <p>&copy; 2024 Club MMA y Judo. Todos los derechos reservados.</p>
   </footer>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('activo');
+  });
+</script>
+
 </body>
 </html>

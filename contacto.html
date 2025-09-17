@@ -13,6 +13,8 @@
       <div class="header-left">
         <img src="img/logo ayto-14@2x.png" alt="Icono" class="icono">
       </div>
+      <!-- Botón hamburguesa -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
       <nav class="header-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -43,5 +45,14 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('activo');
+  });
+</script>
+
 </body>
 </html>
