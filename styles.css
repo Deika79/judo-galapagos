@@ -344,6 +344,7 @@ header {
     width: 200px;
     border-radius: 0 0 0 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 9999;
   }
 
   .header-nav ul {
