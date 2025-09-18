@@ -250,6 +250,32 @@ header {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer .aviso-cookies {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+
+footer .enlace-legal {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+footer .enlace-legal:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 
 /* MEDIA QUERY PARA MÓVILES */
 @media (max-width: 768px) {
