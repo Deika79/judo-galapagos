@@ -144,11 +144,13 @@ header {
 .contenedor-fotos img {
   width: 45%;
   max-width: 500px;
+  height: auto; /* mantiene la proporción original */
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain; /* antes estaba cover */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
+
 
 .contenedor-fotos img:hover {
   transform: scale(1.05);
@@ -239,17 +241,19 @@ header {
 
 .grid-galeria img {
   width: 100%;
-  height: auto;
+  height: 220px; /* 🔹 Fuerza un alto fijo */
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: cover; /* rellena el espacio sin deformarse */
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  display: block;
 }
 
 .grid-galeria img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+
 /* Asegura que el lightbox esté siempre arriba */
 .lightboxOverlay, .lightbox {
   z-index: 9999 !important;
