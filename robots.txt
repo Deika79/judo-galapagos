@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://deika79.github.io/judo-galapagos/sitemap.xml
+
+
+
